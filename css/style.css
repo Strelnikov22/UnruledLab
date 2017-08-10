@@ -1,0 +1,507 @@
+/*Шапка*/
+/* Шапка топ*/
+body{
+	background-color: #f8f9fd;
+}
+header{
+	box-shadow: 1px 0px 9px -2px #acacac;
+	height: 80px;
+}
+.top-header{
+	height: 80px;
+	background-color: #fff;
+}
+/* Шапка левая часть*/
+.left-top-header{
+	background-color: #1f2328;
+	height: 80px;
+}
+.left-top-header h3{
+	display: block;
+	float: right;
+	font-family: "MyriadProlight";
+	color: #fcfcfc;
+	margin: 17px 0;
+	line-height: 23px;
+}
+/* Шапка центральная часть*/
+.center-top-header{
+	text-align: center;
+	font-family: "MyriadProlight";
+}
+.center-top-header h4{
+	line-height: 60px;
+	color: #1f2328;
+}
+/* Шапка right часть*/
+.dropdown-toggle{
+	font-family: "MyriadProSemiBold";
+}
+.menu-count-news{
+	background-color: #f77200;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	color: white;
+	margin-left: 20px;
+	position: relative;
+}
+.menu-count-news::before{
+	content: "";
+	display: block;
+	position: absolute;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid #f77200;
+	left: -18px;
+	top: 5px;
+}
+.right-top-header	.navbar-default .navbar-nav>.open>a,.right-top-header .navbar-default .navbar-nav>.open>a:hover,.right-top-header .navbar-default .navbar-nav>.open>a:focus {
+	background-color: #fff;
+	color: #000;
+}
+.right-top-header .navbar-default {
+	background-color: #fff;
+	border:0px solid #fff;
+}
+.menu-ul-header{
+	height: 80px;
+}
+.menu-ul-header>li,.menu-ul-header>li>a{
+	height: 100%;
+}
+.menu-ul-header>li>a{
+	padding: 30px 0;
+	display: inline-block;
+}
+.menu-bot-off{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	margin: -5px 10px;
+}
+.menu-bot-off>span{
+	color: #fff;
+	text-align: center;
+	margin: 0px 0px 0px 4px;
+	line-height: 19px;
+	font-size: 13px;
+}
+
+/*content*/
+
+.content{
+	margin-top: 15px;
+}
+
+/*left-sidebar*/
+
+.left-sidebar{
+	box-shadow: 1px 0px 9px -2px #acacac;
+}
+.left-sidebar ul{
+	
+}
+.left-sidebar ul li{
+	list-style-type: none;
+	margin: 20px 0px;
+}
+.left-sidebar ul li a{
+	font-family: "MyriadProlight";
+	color: #1f2328;
+}
+.left-sidebar ul li a:hover{
+	font-family: "MyriadProRegular";
+}
+
+/*right-sidebar*/
+
+.block-history{
+	background: linear-gradient(45deg, #6c6c6d, #000);
+	color: #FFF;
+	padding-bottom: 45px;
+}
+.kub{
+	margin-bottom: 25px;
+}
+.pusto{
+	width: 100%;
+	min-height: 1px;
+	clear: both;
+}
+.menu-fixed{
+	position: fixed;
+	top: 0;
+	left: 0px;
+	right: 0;
+	z-index: 20;
+	animation-duration: 1s;
+	animation-name: animate;
+}
+@keyframes animate{
+	0%{
+		top: -50px;
+	}
+	100%{
+		top:0;
+	}
+}
+@keyframes animate-sid{
+	0%{
+		top: 50px;
+	}
+	100%{
+		top:100px;
+	}
+}
+.menu-fixed-sidebar{
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	z-index: 20;
+	animation-duration: 1s;
+	animation-name: animate-sid;
+	width: 365px;
+}
+.right-sidebar{
+	padding: 0;
+}
+.left-sidebar{
+	height: 3000px;
+	position: relative;
+}
+
+/*БЛОК ИСТОРИЯ*/
+
+.history-left,.history-right{
+	font-family: "MyriadProRegular";
+	margin: 40px 0;
+}
+.history-right{
+	border-left: 1px solid #fff;
+}
+.history-left span{
+	font-style: italic;
+	margin: 50px 30px;
+}
+.history-left span:before{
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 1px;
+	background-color: #b1b1b1;
+	margin: 3px 10px;
+
+}
+.history-left h1{
+	margin: 30px;
+}
+.history-right h4{
+	line-height: 5px;
+	margin: 0 50px;
+	text-transform: uppercase;
+}
+.history-right p{
+	margin: 30px 20px 0px 50px;
+}
+
+.count-sprite h4{
+	text-align: center;
+	margin: 10px 10px 50px 0;
+	text-transform: uppercase;
+	font-family: "MyriadProRegular";
+
+}
+.kub-border{
+	margin: 0px 30px;
+	border-bottom: 2px solid #f78e34;
+	border-top: 2px solid #fff;
+	height: 140px;
+	width: 170px;
+	text-align: center;
+}
+
+.kub-border::before {
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f78e34 100%);
+	background: -webkit-gradient(linear, top, bottom, color-stop(0%, #ffffff), color-stop(100%, #f78e34));
+	background: -webkit-linear-gradient(bottom, #ffffff 0%, #f78e34 100%);
+	background: -o-linear-gradient(bottom, #ffffff 0%, #f78e34 100%);
+	background: -ms-linear-gradient(bottom, #ffffff 0%, #f78e34 100%);
+	background: linear-gradient(to bottom, #ffffff 0%, #f78e34 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f78e34', GradientType=1);
+	content: "";
+	display: block;
+	height: 100%;
+	width: 2px;
+	float: left;
+}
+.kub-border::after {
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f78e34 100%);
+	background: -webkit-gradient(linear, top, bottom, color-stop(0%, #ffffff), color-stop(100%, #f78e34));
+	background: -webkit-linear-gradient(bottom, #ffffff 0%, #f78e34 100%);
+	background: -o-linear-gradient(bottom, #ffffff 0%, #f78e34 100%);
+	background: -ms-linear-gradient(bottom, #ffffff 0%, #f78e34 100%);
+	background: linear-gradient(to bottom, #ffffff 0%, #f78e34 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f78e34', GradientType=1);
+	content: "";
+	display: block;
+	height: 100%;
+	width: 2px;
+	float: right;
+	margin: -63px 0;
+}
+
+
+/*БЛОК КЛИЕНТЫ*/
+
+.klient h4{
+	text-align: center;
+	margin: 40px 20px 0px 0;
+	text-transform: uppercase;
+	font-family: "MyriadProRegular";
+}
+.klient{
+	padding-bottom: 45px;
+}
+.marka-project>div>img{
+	width: 95%;
+	height: 95%;
+}
+.logo-partners{
+	height: 150px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 25px;
+}
+
+
+.logo-partners img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; /* IE 6-9 */
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	margin: auto;
+	display: block;
+}
+.logo-partners img:hover {
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+	filter: none; /* IE 6-9 */
+	width: 100%;
+	height: 100%;
+	box-shadow: 2px 1px 13px -3px #898989;
+}
+.more-partners{
+	width: 140px;
+	padding: 10px 0px;
+	text-align: center;
+	display: block;
+	clear: both;
+	margin-left: 10px;
+	background-color: #ececec;
+	color: #7c7b7b;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	font-family: "MyriadProlight";
+	margin-bottom: 45px;
+}
+.more-partners:hover, .more-partners:focus{
+	width: 150;
+	padding: 13px 0px;
+	box-shadow: 2px 1px 13px -3px #898989;
+	color: #7c7b7b;
+	text-decoration: none;
+}
+
+/*БЛОК why UL*/
+
+.block-who_UL{
+	background: linear-gradient(45deg, #6c6c6d, #000);
+	color: #FFF;
+	padding-bottom: 45px;
+	margin-top: 45px;
+	clear: both;
+}
+.block-who_UL>div>h4{
+	font-family: "MyriadProRegular";
+	text-align: center;
+	padding: 45px 0;
+}
+.why-UL img{
+	display: block;
+	margin: auto;
+}
+.why-UL span{
+	display: block;
+	text-align: center;
+	padding: 10px;
+	margin: 15px;
+	font-family: "MyriadProRegular";
+	font-size: 16px;
+}
+.open-project{
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	line-height: 150px;
+	display: block;
+	border: 1px solid #f67303;
+	color: #fff;
+	font-family: "MyriadProRegular";
+	font-size: 16px;
+	margin: auto;
+}
+.open-project:hover, .open-project:focus{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+/* БЛОК ПОРТФОЛИО */
+
+.block-portfolio>div>h4{
+	font-family: "MyriadProRegular";
+	text-align: center;
+	padding: 35px 0;
+}
+.project-complate>img{
+    width: 100%;
+    max-height: 400px;
+}
+.project-complate{
+	margin-bottom: 35px;
+}
+.project-complate>h4, .project-complate>p{
+	font-family: "MyriadProRegular";
+	padding: 5px;
+}
+.more-project{
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	width: 150px;
+	border:1px solid #000;
+	color: #000;
+}
+.more-project:hover, .more-project:focus{
+	color: #000;
+	text-decoration: none;
+}
+.shoping-project{
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	width: 100px;
+	border:1px solid #c6c6c5;
+	margin-left: 25px;
+}
+.shoping-project>img{
+	width: 20px;
+	height: 20px;
+}
+.block-portfolio .more-partners{
+	margin: auto;
+}
+#map{
+	padding: 0;
+	margin-top: 25px;
+}
+
+
+/*footer*/
+
+footer{
+	color: #fff;
+	background-color: #000;
+	padding: 25px;
+}
+.form-footer,.text-footer{
+	height: 500px;
+}
+.input-group{
+	display: block;
+}
+.input-group>span{
+	display: block;
+	text-align: right;
+	color: #f77200;
+}
+.input-group>span>p{
+	display: inline-block;
+	color: #f77200;
+	font-family: "MyriadProRegular";
+	margin: 10px 0px 10px 10px;
+}
+.input-group>input{
+	background-color: #000;
+	padding: 25px 10px;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.input-group>textarea{
+	background-color: #000;
+	padding: 15px 10px;
+	height: 150px;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.but-form{
+	width: 100%;
+	padding: 15px 10px!important;
+}
+.text-footer>h3{
+	font-family: "MyriadProSemiBold";
+}
+.text-footer>p{
+	font-family: "MyriadProRegular";
+	margin-bottom: 35px;
+}
+.text-footer>p>a{
+	color: #f77200;
+}
+.footer-menu>h3{
+	text-transform: uppercase;
+	font-family: "MyriadProlight";
+	text-decoration: underline;
+}
+.footer-menu>ul>li{
+	list-style-type: none;
+	margin: 10px 0;
+}
+.footer-menu>ul{
+	margin: 0;
+	padding: 0;
+}
+.footer-menu>ul>li>a{
+	color: #fff;
+	font-family: "MyriadProRegular";
+}
+.footer-menu>ul>li>a>span{
+	display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 10px;
+    padding: 3px 0px;
+    line-height: 7px;
+    margin: 0 10px;
+    font-family: "MyriadProRegular";
+}
